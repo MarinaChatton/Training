@@ -20,35 +20,40 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="show toast" />
+            android:text="show toast"
+            android:backgroundTint="#1B5E91"/>
 
         <Button
             android:id="@+id/test2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 2" />
+            android:text="test 2"
+            android:backgroundTint="#1B5E00"/>
 
         <Button
             android:id="@+id/test3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 3" />
+            android:text="test 3"
+            android:backgroundTint="#1B8E91"/>
 
         <Button
             android:id="@+id/test4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 4" />
+            android:text="test 4"
+            android:backgroundTint="#1F0E91"/>
 
         <Button
             android:id="@+id/test5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 5" />
+            android:text="test 5"
+            android:backgroundTint="#00FF58"/>
     </LinearLayout>
 
     <LinearLayout
@@ -62,34 +67,39 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 6" />
+            android:text="test 6"
+            android:backgroundTint="#FF88"/>
 
         <Button
             android:id="@+id/test7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 7" />
+            android:text="test 7"
+            android:backgroundTint="#CC4"/>
 
         <Button
             android:id="@+id/test8"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 8" />
+            android:text="test 8"
+            android:backgroundTint="#1B5E91"/>
 
         <Button
             android:id="@+id/test9"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 9" />
+            android:text="test 9"
+            android:backgroundTint="#CC00"/>
 
         <Button
             android:id="@+id/test10"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 10" />
+            android:text="test 10"
+            android:backgroundTint="#EE7890"/>
     </LinearLayout>
 </LinearLayout>
