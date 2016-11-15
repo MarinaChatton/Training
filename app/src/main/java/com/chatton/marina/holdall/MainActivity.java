@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         test1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clic !", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Click!", Toast.LENGTH_SHORT).show();
             }
         });
     }
