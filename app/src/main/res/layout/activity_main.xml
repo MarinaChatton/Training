@@ -12,24 +12,28 @@
     <Button
         android:id="@+id/test1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="show toast" />
 
     <Button
         android:id="@+id/test2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="test 2" />
 
     <Button
         android:id="@+id/test3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="test 3" />
 
     <Button
         android:id="@+id/test4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="test 4" />
 </LinearLayout>
