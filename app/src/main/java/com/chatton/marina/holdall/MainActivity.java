@@ -1,5 +1,6 @@
 package com.chatton.marina.holdall;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,11 +15,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button test1 = (Button) findViewById(R.id.test1);
-        test1.setOnClickListener(new View.OnClickListener() {
+        Button showToastBtn = (Button) findViewById(R.id.test1);
+        showToastBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Click!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button picassoBtn = (Button) findViewById(R.id.test2);
+        picassoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PicassoActivity.class);
+                startActivity(intent);
             }
         });
     }

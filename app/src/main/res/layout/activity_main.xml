@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 2"
+            android:text="picasso"
             android:backgroundTint="#1B5E00"/>
 
         <Button
