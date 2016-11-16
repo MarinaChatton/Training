@@ -31,5 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button palindromeBtn = (Button) findViewById(R.id.test3);
+        palindromeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PalindromeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
