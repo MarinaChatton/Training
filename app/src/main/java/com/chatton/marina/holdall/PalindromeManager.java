@@ -6,13 +6,17 @@ package com.chatton.marina.holdall;
 
 public class PalindromeManager {
     boolean isPalindrome(String string){
-        int maxIndex = string.length()-1;
-        for (int i=0; i<=maxIndex/2; i++){
-            if (string.charAt(i)!=string.charAt(maxIndex-i)){
-                return false;
+        if(string.length()>0) {
+            int maxIndex = string.length() - 1;
+            for (int i = 0; i <= maxIndex / 2; i++) {
+                if (string.charAt(i) != string.charAt(maxIndex - i)) {
+                    return false;
+                }
             }
+            return true;
+        }else{
+            return false;
         }
-        return true;
     }
 
     String reverse(String string){
