@@ -24,6 +24,7 @@ public class ListAdapter extends BaseAdapter {
 
     public void setStringList(List<String> stringList) {
         this.stringList = stringList;
+        notifyDataSetChanged();
     }
 
     @Override

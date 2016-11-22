@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="test 5"
+            android:text="list 2"
             android:backgroundTint="#00FF58"/>
     </LinearLayout>
 

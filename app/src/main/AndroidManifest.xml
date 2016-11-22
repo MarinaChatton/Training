@@ -20,7 +20,9 @@
         <activity android:name=".PicassoActivity" />
         <activity android:name=".PalindromeActivity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".ListItemActivity"></activity>
+        <activity android:name=".ListItemActivity" />
+        <activity android:name=".List2Activity" />
+        <activity android:name=".List2ItemActivity"></activity>
     </application>
 
 </manifest>

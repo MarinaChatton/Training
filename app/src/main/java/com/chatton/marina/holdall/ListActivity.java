@@ -27,10 +27,11 @@ public class ListActivity extends AppCompatActivity {
         list.add("Tutu");
 
         adapter  = new ListAdapter(this);
-        adapter.setStringList(list);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+
+        adapter.setStringList(list);//call automatically notifyDataSetChanged() (see method in ListAdapter)
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
