@@ -1,5 +1,6 @@
 package com.chatton.marina.holdall;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,12 @@ import java.util.List;
  */
 
 public class ListAdapter extends BaseAdapter {
-    List<String> stringList = new ArrayList<>();
+    protected List<String> stringList = new ArrayList<>();
+    private Context context;
+
+    public ListAdapter(Context context) {
+        this.context = context;
+    }
 
     @Override
     public int getCount() {
@@ -34,7 +40,7 @@ public class ListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null){
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.row_layout, parent, false);
         }
         ((TextView) convertView.findViewById(R.id.text)).setText(getItem(position));
         return convertView;

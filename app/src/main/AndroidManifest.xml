@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".PicassoActivity" />
         <activity android:name=".PalindromeActivity" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".ListItemActivity"></activity>
     </application>
 
 </manifest>
