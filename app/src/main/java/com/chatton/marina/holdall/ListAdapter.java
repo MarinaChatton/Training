@@ -15,11 +15,15 @@ import java.util.List;
  */
 
 public class ListAdapter extends BaseAdapter {
-    protected List<String> stringList = new ArrayList<>();
+    private List<String> stringList = new ArrayList<>();
     private Context context;
 
     public ListAdapter(Context context) {
         this.context = context;
+    }
+
+    public void setStringList(List<String> stringList) {
+        this.stringList = stringList;
     }
 
     @Override

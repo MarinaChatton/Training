@@ -8,19 +8,26 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListActivity extends AppCompatActivity {
 
-    ListAdapter adapter = new ListAdapter(this);
+    private ListAdapter adapter;
+    private List<String> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        adapter.stringList.add("Toto");
-        adapter.stringList.add("Tata");
-        adapter.stringList.add("Titi");
-        adapter.stringList.add("Tutu");
+        list.add("Toto");
+        list.add("Tata");
+        list.add("Titi");
+        list.add("Tutu");
+
+        adapter  = new ListAdapter(this);
+        adapter.setStringList(list);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
