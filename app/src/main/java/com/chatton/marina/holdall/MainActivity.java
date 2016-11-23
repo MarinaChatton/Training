@@ -3,10 +3,15 @@ package com.chatton.marina.holdall;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.chatton.marina.holdall.fragments.FragmentsActivity;
+import com.chatton.marina.holdall.list.ListActivity;
+import com.chatton.marina.holdall.list2.List2Activity;
+import com.chatton.marina.holdall.palindrome.PalindromeActivity;
+import com.chatton.marina.holdall.picasso.PicassoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, List2Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button fragmentBtn = (Button) findViewById(R.id.test6);
+        fragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FragmentsActivity.class);
                 startActivity(intent);
             }
         });

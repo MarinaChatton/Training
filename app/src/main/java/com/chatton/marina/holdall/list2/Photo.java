@@ -1,4 +1,4 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.list2;
 
 /**
  * Created by Marina on 22/11/2016.

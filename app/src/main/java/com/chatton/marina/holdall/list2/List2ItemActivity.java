@@ -1,10 +1,11 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.list2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.chatton.marina.holdall.R;
 import com.squareup.picasso.Picasso;
 
 public class List2ItemActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.palindrome;
 
 /**
  * Created by Marina on 16/11/2016.

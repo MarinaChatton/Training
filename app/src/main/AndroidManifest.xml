@@ -17,12 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PicassoActivity" />
-        <activity android:name=".PalindromeActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".ListItemActivity" />
-        <activity android:name=".List2Activity" />
-        <activity android:name=".List2ItemActivity"></activity>
+        <activity android:name=".picasso.PicassoActivity" />
+        <activity android:name=".palindrome.PalindromeActivity" />
+        <activity android:name=".list.ListActivity" />
+        <activity android:name=".list.ListItemActivity" />
+        <activity android:name=".list2.List2Activity" />
+        <activity android:name=".list2.List2ItemActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".fragments.FragmentsActivity"></activity>
     </application>
 
 </manifest>

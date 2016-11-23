@@ -1,16 +1,15 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.palindrome;
 
 import android.content.res.ColorStateList;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.chatton.marina.holdall.R;
 
 public class PalindromeActivity extends AppCompatActivity {
     PalindromeManager palindromeManager = new PalindromeManager();

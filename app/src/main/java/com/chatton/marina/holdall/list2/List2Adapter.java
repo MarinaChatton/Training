@@ -1,9 +1,7 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.list2;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chatton.marina.holdall.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -22,8 +21,8 @@ import java.util.List;
  */
 
 public class List2Adapter extends BaseAdapter {
-    List<Photo> photoList = new ArrayList<>();
-    Context context;
+    private List<Photo> photoList = new ArrayList<>();
+    private Context context;
 
     public List2Adapter(Context context) {
         this.context = context;

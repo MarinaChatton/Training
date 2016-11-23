@@ -1,9 +1,10 @@
-package com.chatton.marina.holdall;
+package com.chatton.marina.holdall.picasso;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.chatton.marina.holdall.R;
 import com.squareup.picasso.Picasso;
 
 public class PicassoActivity extends AppCompatActivity {
