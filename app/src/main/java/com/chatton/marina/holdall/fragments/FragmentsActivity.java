@@ -31,9 +31,7 @@ public class FragmentsActivity extends FragmentActivity implements BtnFragment.O
         }else{
             clickCountPortrait++;
             TxtFragment txtFragment = new TxtFragment();
-            Bundle args = new Bundle();
-            args.putString(TxtFragment.ARG_TXT, "Clicked on portrait mode "+clickCountPortrait+" time(s)!");
-            txtFragment.setArguments(args);
+            txtFragment.setBundle("Clicked on portrait mode "+clickCountPortrait+" time(s)!");
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragments_container,txtFragment, "txtFrag");
             fragmentTransaction.addToBackStack(null);//allow to go back to 1st fragment with Back button

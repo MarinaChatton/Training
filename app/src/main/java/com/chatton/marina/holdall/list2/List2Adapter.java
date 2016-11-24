@@ -33,6 +33,10 @@ public class List2Adapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    public List<Photo> getPhotoList() {
+        return photoList;
+    }
+
     @Override
     public int getCount() {
         return photoList.size();

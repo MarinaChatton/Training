@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.chatton.marina.holdall.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,9 +23,13 @@ public class List2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list2);
 
-        photoList.add(new Photo("Chaton mignon","http://francodex.com/wp-content/uploads/2015/08/Chaton851426651.jpg"));
-        photoList.add(new Photo("Chiot","http://collier-de-dressage.com/wp-content/uploads/2016/07/arriv%C3%A9e-chiot-maison.jpeg"));
-        photoList.add(new Photo("Ecureuil", "http://img.over-blog-kiwi.com/1/85/86/15/20151020/ob_9b3102_ecureuil-roux.jpg"));
+        if(savedInstanceState==null) {
+            photoList.add(new Photo("Chaton mignon", "http://francodex.com/wp-content/uploads/2015/08/Chaton851426651.jpg"));
+            photoList.add(new Photo("Chiot", "http://collier-de-dressage.com/wp-content/uploads/2016/07/arriv%C3%A9e-chiot-maison.jpeg"));
+            photoList.add(new Photo("Ecureuil", "http://img.over-blog-kiwi.com/1/85/86/15/20151020/ob_9b3102_ecureuil-roux.jpg"));
+        }else{
+            photoList = (List<Photo>) savedInstanceState.getSerializable("list");
+        }
 
         list2Adapter  = new List2Adapter(this);
 
@@ -47,5 +52,12 @@ public class List2Activity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putSerializable("list", (Serializable) list2Adapter.getPhotoList());
     }
 }

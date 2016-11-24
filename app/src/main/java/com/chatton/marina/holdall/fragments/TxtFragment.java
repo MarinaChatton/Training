@@ -30,6 +30,12 @@ public class TxtFragment extends Fragment {
         return view;
     }
 
+    public void setBundle(String string){
+        Bundle args = new Bundle();
+        args.putString(TxtFragment.ARG_TXT, string);
+        setArguments(args);
+    }
+
     public void setTextviewText(String string){
         TextView textView = (TextView) view.findViewById(R.id.fragment_txt);
         textView.setText(string);

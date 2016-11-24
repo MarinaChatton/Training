@@ -1,10 +1,12 @@
 package com.chatton.marina.holdall.list2;
 
+import java.io.Serializable;
+
 /**
  * Created by Marina on 22/11/2016.
  */
 
-public class Photo {
+public class Photo implements Serializable{
     private String title;
     private String url;
 

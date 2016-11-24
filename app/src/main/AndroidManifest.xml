@@ -23,7 +23,6 @@
         <activity android:name=".list.ListItemActivity" />
         <activity android:name=".list2.List2Activity" />
         <activity android:name=".list2.List2ItemActivity" />
-        <activity android:name=".FragmentActivity" />
         <activity android:name=".fragments.FragmentsActivity"></activity>
     </application>
 
